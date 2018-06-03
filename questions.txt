@@ -1,0 +1,136 @@
+##-----Question-----##
+public class ListTest
+{
+    public static void main(String[] ar)
+    {
+        List<String> li=new ArrayList<String>();
+        String s="JayHo";
+        li.add(s);
+        li.add(s+s);
+        li.add("String");
+        System.out.println(li.size());
+        System.out.println(li.contains(8));
+        System.out.println(li.contains("JayHOJayHo"));
+    }
+} 
+What will be the output while compiling and running the above code?
+
+##ans1##
+2 true false
+
+##ans2##
+2 false true
+
+##ans3##
+3 true false
+
+##ans4##
+3 false true
+
+##ans5##
+2 false false
+
+##correct##
+4 
+
+##-----Question-----##
+public class ListTest
+{
+    public static void main(String[] ar)
+    {
+        List li=new ArrayList();
+        li.add(new Integer(76));//1
+        li.add(86);//2
+        System.out.println(li);
+    }
+}
+What will be the output while compiling and running the above code?
+
+##ans1##
+[76,86]
+
+##ans2##
+compilation error at line 1.
+
+##ans3##
+compilation error at line 2.
+
+##ans4##
+runtime error.
+
+##ans5##
+
+##correct##
+Ans.1
+
+##-----Question-----##
+class CollDemo
+{
+    public static void main(String[] ar)
+    {
+        // Some code here; // 
+        for(int i=0;i<=10;i++)
+        {
+            List<Integer> love=new ArrayList<Integer>();
+            for(int j=0;j<=10;j++)
+            love.add(i*j);
+            game.add(love);
+        }
+        for(List<Integer> love:game)
+        System.out.println(love);
+    }
+}
+Which statement below could be inserted in the above comment line to make the above code run fine?
+
+##ans1##
+List<List<Integer>> game=new List<List<Integer>>();
+
+##ans2##
+List<List<Integer>> game=new ArrayList<List<Integer>>();
+
+##ans3##
+List<List<Integer>> game=new ArrayList<ArrayList<Integer>>();
+
+##ans4##
+List<List,Integer> game=new ArrayList<List,Integer>();
+
+##ans5##
+List<List,Integer> game=new List<List,Integer>();
+
+##correct##
+2
+
+##-----Question-----##
+{
+    public static void main(String[] ar)
+    {
+        Set s1=new TreeSet();
+        s1.add("3");        //1
+        s1.add("vodafone");    //2
+        s1.add("Three");    //3
+        s1.add(3);        //4
+        Iterator it=s1.iterator();
+        while(it.hasNext())
+        System.out.print(it.next()+" ");
+    }
+}
+What will be the output while compiling and running the above code?
+
+##ans1##
+3 Three Vodafone
+
+##ans2##
+3 Three Vodafone 3
+
+##ans3##
+This code will give a compiletime error.
+
+##ans4##
+This will compile but give runtime ClassCasteException.
+
+##ans5##
+Three Vodafone.
+
+##correct##
+4
+
